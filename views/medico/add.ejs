@@ -1,0 +1,35 @@
+
+
+
+<%- include('../includes/head.ejs') %>
+
+<div class="w-100" style="min-height: 100vh;">
+
+
+    <div class="container py-5">
+        <h5 class="h3 text-left">  Adicionar Médico  </h5>
+        <p> Neste formulário você irá adicionar o nome e o CRM do médico. </p>
+
+        <form style="max-width: 350px;" method="POST">
+            <hr>
+            <div class="form-group mt-5">
+                <label class="d-block mb-0 text-secondary"> Nome </label>
+                <input type="text" class="form-control" name="nome">
+            </div>
+            <div class="form-group mb-5">
+                <label class="d-block mb-0 text-secondary"> CRM </label>
+                <input type="text" class="form-control" name="crm">
+            </div>
+         
+            <hr>
+         
+            <div class="form-group d-flex mt-5">
+                <a href="/medico/" class="btn btn-link w-50"> Cancelar </a>
+                <button type="submit" class="btn btn-primary w-50">Salvar</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<%- include('../includes/foot.ejs') %>
