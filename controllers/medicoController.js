@@ -53,5 +53,10 @@ router.post('/adicionar', async (req, res) => {
 
 });
 
+router.post('/crm/', async (req, res) => {
+
+  
+});
+
 
 module.exports = router;
