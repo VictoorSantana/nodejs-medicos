@@ -16,7 +16,6 @@ router.get('/', async (req, res) => {
 
 router.get('/adicionar', async (req, res) => {
 
-
     Especialidade.find()
     .then(especialidade => {
       res.render('medico/add', {
@@ -34,7 +33,6 @@ router.post('/adicionar', async (req, res) => {
 
     const nome = req.body.nome;
     const crm = req.body.crm;
-
 
     const medico = new Medico({
         nome,
